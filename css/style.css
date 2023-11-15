@@ -1,0 +1,252 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #F5F5F5;
+}
+/*Land-Page*/
+
+.hero {
+  background-position: center center;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.534);
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.overlay .content .hero-title {
+  font-size: 3rem;
+}
+
+.self-writing {
+  font-size: 1.5rem;
+  overflow: hidden;
+  display: inline-block;
+  animation: write 2s steps(20) forwards infinite;
+  white-space: nowrap;
+  border-right: 1px solid #ffffff;
+  
+}
+@keyframes write {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.about .title::before {
+  content: '';
+  position: absolute;
+  min-height: 7%;
+  min-width: 22%;
+  background-color: #0078FF;
+ bottom: -5px;
+  left: 0px;
+  
+}
+.box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 0 0 0 10px #0078FF;
+  transition: all 0.3s;
+}
+.box-icon:hover {
+  background-color:#0078FF;
+  color: #ffffff;
+  box-shadow: 0 0 0 10px #0077ff33;
+}
+
+@media (max-width: 576px) { 
+  .h-image {
+    flex-direction: column;
+  }
+  .h-image .image {
+    padding-bottom: 15px;
+  }
+  .icon-cont {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  #getid {
+    padding-top: 25px;
+  }
+}
+
+.icon-section {
+  position: relative;
+  padding: 8rem 0;
+  margin-bottom: 8rem;
+}
+.bg-image {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+.overlay-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0077ff;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+.icon-box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 0 0 0 8px #e1e2e4;
+  
+}
+.pt-left {
+  cursor: pointer;
+}
+.pt-right p{
+font-size: 14px;
+}
+.pt-right p span {
+  font-weight: 600;
+  color: #0077ff;
+}
+
+.pt-card {
+overflow: hidden;
+transition: all 400ms;
+}
+.pt-card:hover img{
+transform: scale(1.1);
+transition: all 700ms ;
+transition-timing-function: ease-in-out;
+}
+#slide {
+  background-image: url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.overlay-three {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0077ff;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.blog-foot-one img {
+  height: 30px;
+}
+.card-blog-content h6 {
+top: -13px;
+left: 40%;
+padding: 5px;
+background-color: #0077ff;
+color: white;
+border-radius: 5px;
+font-size: 14px;
+}
+/* .contact .section-image img {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+} */
+#contact {
+  background-image: url(../images/overlay-bg.jpg);
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+#btn .butn {
+  border-radius: 50vh;
+  color: white;
+  background-color: #0077ff;
+}
+.left-icon li {
+  color: #0077ff;
+  margin-bottom: 8px;
+}
+.overlay-four {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0077ff94;
+  width: 100%;
+  height: 100%;
+  
+}
+.footer-content {
+  background-color: #0062D3;
+}
+.last-icon {
+padding-top: 10px;
+
+}
+.h2-head h2::before {
+content: '';
+position: absolute;
+width: 20%;
+height: 5%;
+background-color: #0062D3;
+bottom: 0;
+left: 0;
+}
+/*--------------------------------*/
+/*BEFORE*/
+.services-title::before {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 6%;
+  background-color: #0062D3;
+  bottom: 0;
+  left: 45%;
+}
+.portfolio-head {
+  padding-bottom: 5px;
+}
+.portfolio-head::before {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 6%;
+  background-color: #0062D3;
+  bottom: 0;
+  left: 45%;
+
+}
+#blog .section-head::before {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 6%;
+  background-color: #0062D3;
+  bottom: 0;
+  left: 45%;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.692) !important;
+}
